@@ -201,13 +201,13 @@
 
     <script>
       function submitQuery() {
-        const input = document.getElementById("queryInput");
-        const query = input.value.trim();
+        input = document.getElementById("queryInput");
+        query = input.value.trim();
 
         if (query) {
           // Add to recents
-          const recentsList = document.getElementById("recentsList");
-          const newItem = document.createElement("div");
+          recentsList = document.getElementById("recentsList");
+          newItem = document.createElement("div");
           newItem.className = "recent-item";
           newItem.textContent = query;
           newItem.onclick = function () {
